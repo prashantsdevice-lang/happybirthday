@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Happy Birthday Yashika 🎀</title>
+<style>
+  /* ---------- Cute Pastel Theme (Option A) ---------- */
+  :root{
+    --bg1:#fff7fb; --pink:#ff9cc2; --sky:#c8f0ff; --lav:#e8d9ff; --mint:#bff0da;
+    --glass: rgba(255,255,255,0.75);
+    --cardShadow: 0 12px 30px rgba(16,24,40,0.06);
+    --radius:18px; --maxW:1100px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0;font-family:"Nunito", "Poppins", "Comic Sans MS", system-ui, -apple-system; color:#222}
+  body{
+    background: linear-gradient(180deg,#fffafc 0%, #fff0f8 50%, #f2fbff 100%);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    overflow-x:hidden;
+  }
+  .container{max-width:var(--maxW);margin:0 auto;padding:18px}
+  header{display:flex;align-items:center;justify-content:space-between;gap:12px;position:relative}
+  .brand{display:flex;gap:12px;align-items:center}
+  .brand .logo{font-size:32px}
+  .brand h1{margin:0;font-size:18px;letter-spacing:0.4px}
+  nav{display:flex;gap:8px;flex-wrap:wrap}
+  nav button{background:var(--glass);border:0;padding:9px 12px;border-radius:12px;cursor:pointer;font-weight:700;box-shadow:var(--cardShadow)}
+  nav button[aria-pressed="true"]{background:linear-gradient(90deg,var(--pink),#d18bcb);color:white;transform:translateY(-2px)}
+  /* Top flags */
+  .flags{height:110px;pointer-events:none;position:relative;margin-top:8px}
+  .flag-strip{position:absolute;left:0;right:0;top:6px}
+  .flag{position:absolute;top:6px;width:0;height:0;border-left:34px solid transparent;border-right:34px solid transparent;border-top:60px solid;transform-origin:top center;animation:flagDance 1.6s ease-in-out infinite}
+  .flag:nth-child(1){left:4%;border-top-color:#ffd5e6; animation-delay:0}
+  .flag:nth-child(2){left:14%;border-top-color:#ffb4d2; animation-delay:.12s}
+  .flag:nth-child(3){left:24%;border-top-color:#ffd99b; animation-delay:.24s}
+  .flag:nth-child(4){left:34%;border-top-color:#bfe9ff; animation-delay:.36s}
+  .flag:nth-child(5){left:44%;border-top-color:#e9d9ff; animation-delay:.48s}
+  .flag:nth-child(6){left:56%;border-top-color:#bff2dd; animation-delay:.6s}
+  .flag:nth-child(7){left:68%;border-top-color:#ffd0f0; animation-delay:.72s}
+  .flag:nth-child(8){left:80%;border-top-color:#ffdfb8; animation-delay:.84s}
+  @keyframes flagDance{0%{transform:rotate(0)}50%{transform:rotate(7deg)}100%{transform:rotate(0)}}
+
+  /* Balloons layer */
+  .balloons{position:fixed;inset:0;pointer-events:none;z-index:6}
+  .balloon{position:absolute;bottom:-160px;width:84px;height:110px;border-radius:50% 50% 44% 44%;display:flex;align-items:flex-end;justify-content:center;font-size:36px;animation:float 16s linear infinite;filter:drop-shadow(0 12px 24px rgba(0,0,0,0.08))}
+  .b1{left:6%;background:linear-gradient(180deg,#ffdbe9,#ff9cc2);animation-duration:15s}
+  .b2{left:18%;background:linear-gradient(180deg,#ffe9c6,#ffd38a);animation-duration:18s;animation-delay:1s}
+  .b3{left:30%;background:linear-gradient(180deg,#dcf8ff,#bfefff);animation-duration:17s;animation-delay:.4s}
+  .b4{left:44%;background:linear-gradient(180deg,#e9dbff,#e0c9ff);animation-duration:19s;animation-delay:.9s}
+  .b5{left:58%;background:linear-gradient(180deg,#d7ffee,#bff0da);animation-duration:16s;animation-delay:.2s}
+  .b6{left:74%;background:linear-gradient(180deg,#ffd9f0,#ffb6e0);animation-duration:20s;animation-delay:.7s}
+  .b7{left:86%;background:linear-gradient(180deg,#fff6d6,#ffe7a3);animation-duration:18s;animation-delay:0s}
+  @keyframes float{0%{transform:translateY(0) rotate(0deg);opacity:.9}50%{transform:translateY(-420px) rotate(10deg);opacity:1}100%{transform:translateY(0) rotate(0deg);opacity:.9}}
+
+  /* sparkles */
+  .sparkles{position:fixed;inset:0;pointer-events:none;z-index:7}
+  .spark{position:absolute;width:8px;height:8px;border-radius:50%;background:radial-gradient(circle,#fff,rgba(255,255,255,0.5));opacity:.9;filter:blur(.5px);animation:twinkle 3s linear infinite}
+  @keyframes twinkle{0%{transform:scale(.8);opacity:.2}50%{transform:scale(1.2);opacity:1}100%{transform:scale(.8);opacity:.2}}
+
+  /* main layout */
+  main{position:relative;z-index:8;padding-top:10px;min-height:70vh}
+  .card{background:var(--glass);border-radius:16px;padding:16px;box-shadow:var(--cardShadow)}
+  .hero{padding:20px;border-radius:20px;text-align:center}
+  .hero h2{font-size:30px;margin:6px 0}
+  .hero p{opacity:.85;margin:8px 0 0}
+
+  .teddies{display:flex;gap:14px;justify-content:center;align-items:end;margin-top:12px}
+  .teddy{font-size:56px;animation:tDance 1.4s ease-in-out infinite;transform-origin:bottom center}
+  .teddy:nth-child(2){animation-delay:.12s}
+  .teddy:nth-child(3){animation-delay:.24s}
+  @keyframes tDance{0%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-20px) rotate(6deg)}100%{transform:translateY(0) rotate(-6deg)}}
+
+  /* pages (SPA) */
+  .page{display:none;padding:14px 0}
+  .page.active{display:block;animation:appear .36s ease}
+  @keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+  /* grid layouts */
+  .grid{display:grid;gap:12px}
+  .cols-2{grid-template-columns:repeat(2,1fr)}
+  .cols-3{grid-template-columns:repeat(3,1fr)}
+  .cols-4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:900px){ .cols-4{grid-template-columns:repeat(2,1fr)} .cols-3{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:520px){ .cols-2{grid-template-columns:1fr} }
+
+  /* ---------- Wishes ---------- */
+  .wish-card{padding:14px;border-radius:14px;background:linear-gradient(135deg,#ffffff,#fff6fb);box-shadow:0 12px 30px rgba(0,0,0,0.04);transition:transform .18s}
+  .wish-card:hover{transform:translateY(-8px)}
+  .composer{display:flex;gap:10px;margin-top:12px}
+  .composer input{flex:1;padding:12px;border-radius:12px;border:0;box-shadow:inset 0 1px 0 rgba(0,0,0,0.03)}
+  .composer button{padding:12px 14px;border-radius:12px;background:linear-gradient(90deg,var(--pink),#d18bcb);border:0;color:white;font-weight:800;cursor:pointer}
+
+  /* ---------- Gallery ---------- */
+  .frame{border-radius:12px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,0.06);cursor:pointer}
+  .frame img{width:100%;height:160px;object-fit:cover;display:block;transition:transform .28s}
+  .frame:hover img{transform:scale(1.06)}
+  .lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.7);display:flex;align-items:center;justify-content:center;padding:20px;z-index:9999;opacity:0;pointer-events:none;transition:opacity .2s}
+  .lightbox.open{opacity:1;pointer-events:auto}
+  .lightbox img{max-width:92vw;max-height:86vh;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,0.6)}
+
+  /* ---------- Funny / Roast ---------- */
+  .meme{border-radius:12px;overflow:hidden}
+  .roast{padding:14px;border-radius:12px;background:linear-gradient(90deg,#ff98b2,#ffd6e8);color:#5a1230;font-weight:800;box-shadow:0 14px 40px rgba(0,0,0,0.05);text-align:center}
+  .roast.wiggle{animation:wiggle 1.3s infinite}
+  @keyframes wiggle{0%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}100%{transform:rotate(-2deg)}}
+
+  /* ---------- Timeline ---------- */
+  .timeline{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+  .timeline .item{display:flex;gap:12px;align-items:flex-start}
+  .timeline .dot{width:14px;height:14px;border-radius:50%;background:linear-gradient(90deg,var(--pink),#d18bcb);margin-top:6px;box-shadow:0 8px 18px rgba(0,0,0,0.06)}
+  .timeline .info{background:linear-gradient(180deg,#fff,#fff7fb);padding:12px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.05)}
+
+  /* ---------- Quiz ---------- */
+  .opt{padding:12px;border-radius:10px;background:white;margin-top:10px;cursor:pointer;font-weight:800;box-shadow:0 8px 24px rgba(0,0,0,0.06)}
+  .opt.correct{background:linear-gradient(90deg,#d6ffef,#bff0da);border:3px solid #3fbf9c}
+  .opt.wrong{background:linear-gradient(90deg,#ffdfe6,#ffcfe0);border:3px solid #ff6b8a}
+  .feedback{margin-top:12px;font-weight:800}
+
+  /* ---------- Surprise ---------- */
+  .surprise-egg{width:140px;height:140px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:48px;background:linear-gradient(135deg,#fff8f6,#fff0ff);box-shadow:0 20px 60px rgba(0,0,0,0.06);cursor:pointer}
+  .surprise-card{max-width:520px;padding:16px;border-radius:12px;background:linear-gradient(90deg,#fff,#fffdfb);box-shadow:0 20px 60px rgba(0,0,0,0.06);text-align:center}
+
+  footer{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;padding:10px 14px;border-radius:999px;background:linear-gradient(90deg,var(--pink),#d18bcb);color:white;z-index:50;display:flex;gap:12px;align-items:center;box-shadow:0 20px 50px rgba(0,0,0,0.08)}
+  .footer button{background:rgba(255,255,255,0.12);border:0;color:white;padding:8px 12px;border-radius:999px;cursor:pointer;font-weight:800}
+
+  /* small screens */
+  @media (max-width:640px){
+    .teddy{font-size:44px}
+    .frame img{height:120px}
+    .hero h2{font-size:22px}
+    nav{gap:6px}
+  }
+</style>
+</head>
+<body>
+  <!-- Decorative layers -->
+  <div class="flags" aria-hidden="true">
+    <div class="flag-strip">
+      <div class="flag"></div><div class="flag"></div><div class="flag"></div><div class="flag"></div><div class="flag"></div><div class="flag"></div><div class="flag"></div><div class="flag"></div>
+    </div>
+  </div>
+
+  <div class="balloons" aria-hidden="true">
+    <div class="balloon b1">🎈</div>
+    <div class="balloon b2">🎈</div>
+    <div class="balloon b3">🎈</div>
+    <div class="balloon b4">🎈</div>
+    <div class="balloon b5">🎈</div>
+    <div class="balloon b6">🎈</div>
+    <div class="balloon b7">🎈</div>
+  </div>
+
+  <div class="sparkles" aria-hidden="true">
+    <div class="spark" style="left:8%;top:18%;animation-delay:0s"></div>
+    <div class="spark" style="left:26%;top:34%;animation-delay:.6s"></div>
+    <div class="spark" style="left:50%;top:14%;animation-delay:1.1s"></div>
+    <div class="spark" style="left:72%;top:28%;animation-delay:.3s"></div>
+    <div class="spark" style="left:88%;top:10%;animation-delay:.9s"></div>
+  </div>
+
+  <div class="container" role="main">
+    <header>
+      <div class="brand">
+        <div class="logo">🎀</div>
+        <div>
+          <h1>Happy Birthday, <span style="color:var(--pink);font-weight:900">Yashika</span>!</h1>
+          <div style="font-size:12px;opacity:.8">A pastel party just for you</div>
+        </div>
+      </div>
+
+      <nav aria-label="Primary navigation">
+        <button data-page="page1" aria-pressed="true">Celebrate</button>
+        <button data-page="page2" aria-pressed="false">Fun & Memories</button>
+        <button data-page="page3" aria-pressed="false">Quiz & Surprise</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- PAGE 1: MAIN CELEBRATION (Home + Wishes) -->
+      <section id="page1" class="page active" aria-labelledby="p1title">
+        <div class="hero card" id="p1hero">
+          <h2 id="p1title">Happy Birthday, <span style="color:var(--pink)">Yashika</span> 🎉</h2>
+          <p>May your day be soft as cotton candy and bright as the morning sun. Dance, smile, and let's fill it with wishes.</p>
+
+          <div class="teddies" aria-hidden="true">
+            <div class="teddy">🧸</div>
+            <div class="teddy">🧸</div>
+            <div class="teddy">🧸</div>
+          </div>
+
+          <div style="margin-top:14px" class="cta-row">
+            <button onclick="go('page2')" style="padding:10px 14px;border-radius:12px;background:linear-gradient(90deg,var(--pink),#f6bde0);border:0;cursor:pointer;font-weight:800">See Photos</button>
+            <button onclick="document.getElementById('wishInput').focus()" style="padding:10px 14px;border-radius:12px;background:linear-gradient(90deg,var(--sky),#cfeefc);border:0;cursor:pointer;font-weight:800">Write a Wish</button>
+          </div>
+        </div>
+
+        <div style="margin-top:14px" class="card">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+            <div style="font-weight:900">Send a wish to Yashika</div>
+            <div style="opacity:.8;font-size:13px">Your kind words make the day sweeter</div>
+          </div>
+          <div class="composer" style="margin-top:10px">
+            <input id="wishInput" placeholder="Type a short wish for Yashika..." aria-label="Wish" />
+            <button id="addWish">Add Wish</button>
+          </div>
+
+          <div id="wishesGrid" class="grid cols-3" style="margin-top:12px"></div>
+        </div>
+      </section>
+
+      <!-- PAGE 2: FUN & MEMORIES -->
+      <section id="page2" class="page" aria-labelledby="p2title">
+        <h2 id="p2title">Photos & Laughs</h2>
+
+        <div class="card" style="margin-top:10px">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+            <div style="font-weight:900">Photo Gallery</div>
+            <div style="opacity:.8;font-size:13px">Click images to view larger</div>
+          </div>
+          <div id="galleryGrid" class="grid cols-4" style="margin-top:12px"></div>
+        </div>
+
+        <div style="margin-top:12px" class="grid cols-3">
+          <div class="card">
+            <div style="font-weight:900;margin-bottom:8px">Funny Corner</div>
+            <div class="meme"><img src="https://picsum.photos/seed/fun1/800/520" alt="meme" style="width:100%;display:block;border-radius:10px"></div>
+            <div style="margin-top:8px;font-weight:700">When they save the last slice for later...</div>
+          </div>
+
+          <div class="card">
+            <div style="font-weight:900;margin-bottom:8px">Roast (All Love)</div>
+            <div class="roast wiggle">You call five minutes "just a sec" — historically optimistic!</div>
+            <div style="margin-top:8px;font-weight:800">— playful nudge</div>
+          </div>
+
+          <div class="card">
+            <div style="font-weight:900;margin-bottom:8px">Friendship Timeline</div>
+            <div id="timelineList" class="timeline"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 3: QUIZ & SURPRISE -->
+      <section id="page3" class="page" aria-labelledby="p3title">
+        <h2 id="p3title">Quiz & Secret Surprise</h2>
+
+        <div class="grid cols-2" style="margin-top:12px">
+          <div class="card">
+            <div style="font-weight:900;margin-bottom:8px">How well do you know Yashika?</div>
+            <div id="qText" style="font-weight:900"></div>
+            <div id="qOpts"></div>
+            <div id="qFeedback" class="feedback" aria-live="polite"></div>
+            <div style="margin-top:10px"><button id="nextQ" style="padding:10px 12px;border-radius:12px;background:linear-gradient(90deg,var(--pink),#d18bcb);border:0;color:white;font-weight:800">Next</button></div>
+          </div>
+
+          <div class="card" style="text-align:center">
+            <div style="font-weight:900;margin-bottom:10px">Secret Surprise</div>
+            <div class="surprise-egg" id="surpriseEgg">🎂</div>
+            <div id="surpriseCard" style="display:none;margin-top:12px" class="surprise-card">
+              <h3 style="margin:0">Surprise for Yashika 🎉</h3>
+              <p style="margin:8px 0 0">You are loved more than the last slice of cake. ❤️</p>
+              <img src="https://media.giphy.com/media/13UZisxBxkjPwI/giphy.gif" alt="celebrate" style="width:100%;max-width:260px;border-radius:8px;margin-top:10px">
+              <div style="margin-top:10px;font-weight:800;color:#6b2b57">— From friends with big hearts</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer role="contentinfo">
+    <button id="confettiBtn">Confetti!</button>
+    <button id="musicToggle">Play Music</button>
+    <div style="opacity:.95;font-weight:700">Made with love for Yashika 💖</div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.72);align-items:center;justify-content:center;z-index:9999;padding:18px">
+    <img id="lightboxImg" src="" alt="Large photo" style="max-width:92vw;max-height:86vh;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,0.6)"/>
+  </div>
+
+  <!-- Confetti canvas -->
+  <canvas id="confettiCanvas" style="position:fixed;inset:0;z-index:9998;pointer-events:none"></canvas>
+
+  <!-- background audio (replace with your file) -->
+  <audio id="bgAudio" loop src="/birthday-music.mp3" preload="auto"></audio>
+
+<script>
+/* ======= SPA navigation ======= */
+const nav = document.querySelectorAll('nav button[data-page]');
+const pages = document.querySelectorAll('.page');
+function show(pageId){
+  pages.forEach(p=>p.classList.toggle('active', p.id===pageId));
+  nav.forEach(b=> b.setAttribute('aria-pressed', b.dataset.page===pageId));
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+nav.forEach(b=> b.addEventListener('click', ()=> show(b.dataset.page)));
+function go(p){ show(p) }
+
+/* ======= Wishes handling ======= */
+const defaultWishes = [
+  `Happy Birthday, Yashika! May your day be as sweet as you are.`,
+  `Keep shining — we all love your smile.`,
+  `Cake, hugs, and endless laughter — enjoy every bite!`,
+];
+let wishes = [...defaultWishes];
+const wishesGrid = document.getElementById('wishesGrid');
+function renderWishes(){
+  wishesGrid.innerHTML = '';
+  wishes.forEach(w=>{
+    const d = document.createElement('div'); d.className='wish-card';
+    d.innerHTML = `<div style="font-weight:900">${escape(w)}</div><div style="margin-top:8px;font-size:13px;opacity:.75">— sent with love</div>`;
+    wishesGrid.appendChild(d);
+  });
+}
+document.getElementById('addWish').addEventListener('click', ()=> {
+  const v = document.getElementById('wishInput').value.trim();
+  if(!v) return;
+  wishes.unshift(v);
+  renderWishes();
+  document.getElementById('wishInput').value='';
+});
+renderWishes();
+
+/* ======= Gallery (frames & lightbox) ======= */
+const galleryGrid = document.getElementById('galleryGrid');
+const photos = [
+  'https://picsum.photos/seed/y1/1200/900',
+  'https://picsum.photos/seed/y2/1200/900',
+  'https://picsum.photos/seed/y3/1200/900',
+  'https://picsum.photos/seed/y4/1200/900',
+  'https://picsum.photos/seed/y5/1200/900',
+  'https://picsum.photos/seed/y6/1200/900'
+];
+photos.forEach(src=>{
+  const f = document.createElement('div'); f.className='frame';
+  f.innerHTML = `<img src="${src}" alt="photo" loading="lazy">`;
+  f.addEventListener('click', ()=> openLightbox(src));
+  galleryGrid.appendChild(f);
+});
+const lightbox = document.getElementById('lightbox'), lbImg = document.getElementById('lightboxImg');
+function openLightbox(src){ lbImg.src = src; lightbox.style.display = 'flex'; document.body.style.overflow='hidden'; }
+lightbox.addEventListener('click', ()=> { lightbox.style.display='none'; document.body.style.overflow=''; });
+
+/* ======= Timeline ======= */
+const timelineList = document.getElementById('timelineList');
+const timeline = [
+  {date:'2019-03-10', title:'Met in Class', note:'We worked together on a fun project — instant friends.'},
+  {date:'2020-07-21', title:'Road Trip', note:'Momos and midnight music.'},
+  {date:'2022-12-05', title:'College Fest', note:'You rocked the stage.'}
+];
+timeline.forEach(it=>{
+  const el = document.createElement('div'); el.className='item';
+  el.innerHTML = `<div style="width:32px"><div class="dot"></div></div><div class="info"><div style="font-weight:900">${escape(it.title)}</div><div style="font-size:13px;color:#444;margin-top:6px">${escape(it.date)}</div><div style="margin-top:8px">${escape(it.note)}</div></div>`;
+  timelineList.appendChild(el);
+});
+
+/* ======= Roast grid (already playful) ======= */
+
+/* ======= Quiz logic ======= */
+const quiz = [
+  {q:`What's Yashika's favourite snack?`, opts:['Momo','Pizza','Samosa','Chocolate'], a:0},
+  {q:`Which colour does Yashika love?`, opts:['Maroon','Teal','Yellow','Black'], a:1},
+  {q:`Where does she like to hang out?`, opts:['Cafe','Park','Cinema','Library'], a:0}
+];
+let qi = 0, selected = null;
+const qText = document.getElementById('qText'), qOpts = document.getElementById('qOpts'), qFeedback = document.getElementById('qFeedback');
+function renderQ(){
+  qText.textContent = quiz[qi].q;
+  qOpts.innerHTML = '';
+  qFeedback.textContent = '';
+  quiz[qi].opts.forEach((o, i)=>{
+    const b = document.createElement('div'); b.className='opt'; b.textContent = o;
+    b.addEventListener('click', ()=> {
+      if(selected!==null) return;
+      selected = i;
+      if(i === quiz[qi].a){ b.classList.add('correct'); qFeedback.textContent = 'Correct! 🎉' }
+      else { b.classList.add('wrong'); qFeedback.textContent = 'Nice try — almost! 😅' }
+    });
+    qOpts.appendChild(b);
+  });
+}
+document.getElementById('nextQ').addEventListener('click', ()=> { qi = (qi+1) % quiz.length; selected = null; renderQ(); });
+renderQ();
+
+/* ======= Surprise egg + confetti ======= */
+const surpriseEgg = document.getElementById('surpriseEgg'), surpriseCard = document.getElementById('surpriseCard');
+surpriseEgg.addEventListener('click', ()=> {
+  surpriseCard.style.display='block';
+  launchConfetti(140);
+});
+
+/* ======= Confetti Canvas ======= */
+const canvas = document.getElementById('confettiCanvas'), ctx = canvas.getContext('2d');
+let W = canvas.width = innerWidth, H = canvas.height = innerHeight;
+window.addEventListener('resize', ()=> { W = canvas.width = innerWidth; H = canvas.height = innerHeight; });
+let confetti = [], confettiRAF;
+function spawn(n = 150){
+  const colors = ['#ffd6ea','#ffcf9f','#d4f0ff','#e6d6ff','#d8fff2','#ffdede'];
+  for(let i=0;i<n;i++){
+    confetti.push({
+      x: Math.random()*W,
+      y: Math.random()*H - H,
+      r: Math.random()*6 + 3,
+      d: Math.random()*20 + 5,
+      tilt: Math.random()*15 - 10,
+      color: colors[Math.floor(Math.random()*colors.length)],
+      speed: Math.random()*1.8 + 0.8
+    });
+  }
+  if(!confettiRAF) runConfetti();
+}
+function runConfetti(){
+  confettiRAF = requestAnimationFrame(function loop(){
+    ctx.clearRect(0,0,W,H);
+    let angle = Date.now() / 600;
+    for(let i=0;i<confetti.length;i++){
+      let p = confetti[i];
+      p.tilt = Math.sin(angle + p.d) * 15;
+      p.y += Math.cos(angle + p.d) + 1 + p.speed;
+      p.x += Math.sin(angle) * 0.5;
+      if(p.y > H + 20) { p.y = -10; p.x = Math.random()*W; }
+      ctx.beginPath();
+      ctx.fillStyle = p.color;
+      ctx.ellipse(p.x,p.y,p.r,p.r*0.6,(p.tilt*Math.PI)/180,0,2*Math.PI);
+      ctx.fill();
+    }
+    confettiRAF = requestAnimationFrame(loop);
+  });
+  setTimeout(()=> { confetti = []; cancelAnimationFrame(confettiRAF); confettiRAF = null; ctx.clearRect(0,0,W,H); }, 5000);
+}
+function launchConfetti(n){ spawn(n || 120); }
+document.getElementById('confettiBtn').addEventListener('click', ()=> launchConfetti(180));
+
+/* ======= Music controls ======= */
+const bgAudio = document.getElementById('bgAudio'), musicToggle = document.getElementById('musicToggle');
+let playing = false;
+musicToggle.addEventListener('click', ()=>{
+  if(!playing){ bgAudio.play().catch(()=> alert('Autoplay blocked — tap the screen to enable audio.')); musicToggle.textContent='Pause Music'; playing=true; }
+  else { bgAudio.pause(); musicToggle.textContent='Play Music'; playing=false; }
+});
+/* allow play after user gesture if blocked */
+document.body.addEventListener('click', function allowOnce(){ if(!playing){ bgAudio.play().then(()=>{ playing=true; musicToggle.textContent='Pause Music'}).catch(()=>{}); } document.body.removeEventListener('click', allowOnce); });
+
+/* ======= Helpers ======= */
+function escape(s){ if(s===null||s===undefined) return ''; return String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;') }
+
+/* ======= Small entry polish ======= */
+window.addEventListener('load', ()=> {
+  // gentle stagger animation for gallery frames
+  document.querySelectorAll('.frame').forEach((f,i)=> f.style.transitionDelay = `${i*40}ms`);
+});
+</script>
+</body>
+</html>
